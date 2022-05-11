@@ -3,7 +3,7 @@ package.json에서 test,eject 부분은 불 필요
 
 public에서 favicon은 url상단에 나타나는 아이콘
 
-### git Upload
+### Github Upload
 - git init
 - git remot add origin {Repository주소}
 - git add . (해당 폴더 모두 포함)
