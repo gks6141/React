@@ -11,19 +11,21 @@ public에서 favicon은 url상단에 나타나는 아이콘
 - git push origin master (데이터 push)
 
 <br>
-
 ### JSX 규칙
-    <ol>
-        - 태그를 꼭 닫혀야함
-        - 두개 이상의 엘리먼트는 무조건 하나의 엘리먼트로 감싸져 있어야함
-        - JSX안에 자바스크립트 값 사용
-        - 조건부 렌더링(if 문 사용 X)
-            - if 문을 사용하기 위해선 IIFE(Immediately Invoked Function Expression, 즉시실행 함수 표현)을 사용해야함
-        - CSS: style과 classname
-            - html에서는 <div class="hello">
-            - class 대신에 className사용
-        - 주석 → {/*....*/}
-    <ul>
+<br>
+
+
+<ol>
+    - 태그를 꼭 닫혀야함
+    - 두개 이상의 엘리먼트는 무조건 하나의 엘리먼트로 감싸져 있어야함
+    - JSX안에 자바스크립트 값 사용
+    - 조건부 렌더링(if 문 사용 X)
+        - if 문을 사용하기 위해선 IIFE(Immediately Invoked Function Expression, 즉시실행 함수 표현)을 사용해야함
+    - CSS: style과 classname
+        - html에서는 <div class="hello">
+        - class 대신에 className사용
+    - 주석 → {/*....*/}
+<ul>
 
 <br>
     
