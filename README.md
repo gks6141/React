@@ -9,46 +9,53 @@ public에서 favicon은 url상단에 나타나는 아이콘
 - git add . (해당 폴더 모두 포함)
 - git commit -m "메세지"
 - git push origin master (데이터 push)
-<br>
-### JSX 규칙
-<ol>
-    - 태그를 꼭 닫혀야함
-    - 두개 이상의 엘리먼트는 무조건 하나의 엘리먼트로 감싸져 있어야함
-    - JSX안에 자바스크립트 값 사용
-    - 조건부 렌더링(if 문 사용 X)
-        - if 문을 사용하기 위해선 IIFE(Immediately Invoked Function Expression, 즉시실행 함수 표현)을 사용해야함
-    - CSS: style과 classname
-        - html에서는 <div class="hello">
-        - class 대신에 className사용
-    - 주석 → {/*....*/}
-<ul>
 
+<br>
+
+### JSX 규칙
+    <ol>
+        - 태그를 꼭 닫혀야함
+        - 두개 이상의 엘리먼트는 무조건 하나의 엘리먼트로 감싸져 있어야함
+        - JSX안에 자바스크립트 값 사용
+        - 조건부 렌더링(if 문 사용 X)
+            - if 문을 사용하기 위해선 IIFE(Immediately Invoked Function Expression, 즉시실행 함수 표현)을 사용해야함
+        - CSS: style과 classname
+            - html에서는 <div class="hello">
+            - class 대신에 className사용
+        - 주석 → {/*....*/}
+    <ul>
+
+<br>
+    
 ### props
 - 부모 컴포넌트가 자식 컴포넌트에게 주는 값
 - 자식 컴포넌트에서는 props 를 받아오기만하고, 받아온 props 를 직접 수정 X
+
+<br>
 
 ### state
 - 컴포넌트 내부에서 선언하며 내부에서 값을 변경 가능
 - class fields 문법을 사용해서 정의
 - class fields 를 사용이유: 편의를 위함
 - super(props)호출 한 이유: 컴포넌트를 만들게 되면서, Component를 상속 → constructor를 작성하게 되면 기존의 클래스 생성자를 덮어쓰게 됨
-<ol>
-    - 메소드 작성
-        - 버튼에서 클릭이벤트가 발생 했을 때 처리 방법
-    - setState
-        - state 에 있는 값을 바꾸기 위해서는 this.setState 를 무조건 거쳐야 함
-        - 객체로 전달되는 값만 업데이트
-    - setState에 객체 대신 함수를 전달
-        - 다시 this.state 를 조회
-        - { number } → 비구조화 할당
-    - 이벤트 설정
-        - 버튼이 클릭되면 우리가 준비한 함수가 각각 호출되도록 설정
-        - 주의
-            - onclick → onClick , onchange → onChange
-            - 렌더링 함수에서 이벤트를 설정할때 메소드를 직접 호출 X
-<ul>
-
-
+    
+    <ol>
+        - 메소드 작성
+            - 버튼에서 클릭이벤트가 발생 했을 때 처리 방법
+        - setState
+            - state 에 있는 값을 바꾸기 위해서는 this.setState 를 무조건 거쳐야 함
+            - 객체로 전달되는 값만 업데이트
+        - setState에 객체 대신 함수를 전달
+            - 다시 this.state 를 조회
+            - { number } → 비구조화 할당
+        - 이벤트 설정
+            - 버튼이 클릭되면 우리가 준비한 함수가 각각 호출되도록 설정
+            - 주의
+                - onclick → onClick , onchange → onChange
+                - 렌더링 함수에서 이벤트를 설정할때 메소드를 직접 호출 X
+    <ul>
+        <br>
+        
 ### LifeCycle API
 
 - constructor: 컴포넌트 생성자 함수
